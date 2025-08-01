@@ -1,0 +1,98 @@
+﻿[
+  {
+    "id": 1,
+    "titre": "Chaise en bois vintage",
+    "description": "Chaise en bois massif des années 60, avec assise en paille tressée. Parfait état.",
+    "prix": 45.00,
+    "images": [
+      {
+        "path": "/images/chaise-bois-vintage-1.jpg",
+        "isDefault": true
+      },
+      {
+        "path": "/images/chaise-bois-vintage-2.jpg",
+        "isDefault": false
+      },
+      {
+        "path": "/images/chaise-bois-vintage-3.jpg",
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "titre": "Téléphone à cadran Bakélite",
+    "description": "Ancien téléphone noir en Bakélite, modèle PTT. Objet de collection non fonctionnel.",
+    "prix": 70.00,
+    "images": [
+      {
+        "path": "/images/telephone-bakelite-1.jpg",
+        "isDefault": true
+      },
+      {
+        "path": "/images/telephone-bakelite-2.jpg",
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "titre": "Miroir doré style Louis XVI",
+    "description": "Miroir ancien avec cadre doré ornementé, idéal pour une décoration classique.",
+    "prix": 120.00,
+    "images": [
+      {
+        "path": "/images/miroir-louis-xvi-1.jpg",
+        "isDefault": true
+      },
+      {
+        "path": "/images/miroir-louis-xvi-2.jpg",
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "titre": "Machine à écrire Underwood",
+    "description": "Machine à écrire mécanique Underwood en très bon état de conservation, ruban à remplacer.",
+    "prix": 150.00,
+    "images": [
+      {
+        "path": "/images/machine-ecrire-underwood-1.jpg",
+        "isDefault": true
+      },
+      {
+        "path": "/images/machine-ecrire-underwood-2.jpg",
+        "isDefault": false
+      },
+      {
+        "path": "/images/machine-ecrire-underwood-3.jpg",
+        "isDefault": false
+      },
+      {
+        "path": "/images/machine-ecrire-underwood-4.jpg",
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "titre": "Lampe industrielle articulée",
+    "description": "Lampe de bureau industrielle des années 50, entièrement articulée et fonctionnelle.",
+    "prix": 65.00,
+    "images": [
+      {
+        "path": "/images/lampe-industrielle-1.jpg",
+        "isDefault": true
+      },
+      {
+        "path": "/images/lampe-industrielle-2.jpg",
+        "isDefault": false
+      },
+      {
+        "path": "/images/lampe-industrielle-3.jpg",
+        "isDefault": false
+      }
+    ]
+  }
+]
