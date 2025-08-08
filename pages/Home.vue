@@ -19,7 +19,3 @@ import ProductCard from "../components/ProductCard.vue";
     </v-col>
   </v-row>
 </template>
-
-<style scoped>
-
-</style>
