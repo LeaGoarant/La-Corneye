@@ -1,0 +1,98 @@
+﻿[
+  {
+    "id": 1,
+    "title": "Vintage Wooden Chair",
+    "description": "Solid wood chair from the 1960s, with a woven straw seat. Excellent condition.",
+    "price": 45.00,
+    "images": [
+      {
+        "path": "/images/vintage-wooden-chair-1.jpg",
+        "isDefault": true
+      },
+      {
+        "path": "/images/vintage-wooden-chair-2.jpg",
+        "isDefault": false
+      },
+      {
+        "path": "/images/vintage-wooden-chair-3.jpg",
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Bakélite Rotary Phone",
+    "description": "Old black Bakélite phone, PTT model. Collector's item, not functional.",
+    "price": 70.00,
+    "images": [
+      {
+        "path": "/images/bakelite-phone-1.jpg",
+        "isDefault": true
+      },
+      {
+        "path": "/images/bakelite-phone-2.jpg",
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Louis XVI Style Gilded Mirror",
+    "description": "Antique mirror with ornate gilded frame, ideal for classic decoration.",
+    "price": 120.00,
+    "images": [
+      {
+        "path": "/images/louis-xvi-mirror-1.jpg",
+        "isDefault": true
+      },
+      {
+        "path": "/images/louis-xvi-mirror-2.jpg",
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Underwood Typewriter",
+    "description": "Mechanical Underwood typewriter in very good condition, ribbon needs replacement.",
+    "price": 150.00,
+    "images": [
+      {
+        "path": "/images/underwood-typewriter-1.jpg",
+        "isDefault": true
+      },
+      {
+        "path": "/images/underwood-typewriter-2.jpg",
+        "isDefault": false
+      },
+      {
+        "path": "/images/underwood-typewriter-3.jpg",
+        "isDefault": false
+      },
+      {
+        "path": "/images/underwood-typewriter-4.jpg",
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Industrial Articulated Lamp",
+    "description": "1950s industrial desk lamp, fully articulated and functional.",
+    "price": 65.00,
+    "images": [
+      {
+        "path": "/images/industrial-lamp-1.jpg",
+        "isDefault": true
+      },
+      {
+        "path": "/images/industrial-lamp-2.jpg",
+        "isDefault": false
+      },
+      {
+        "path": "/images/industrial-lamp-3.jpg",
+        "isDefault": false
+      }
+    ]
+  }
+]
