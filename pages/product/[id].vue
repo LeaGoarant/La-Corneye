@@ -3,6 +3,8 @@ import { useRoute } from 'vue-router'
 import products from "~~/assets/data/products.json";
 
 const route = useRoute()
+const isDialogOpen = ref(false)
+
 const productId: number = Number(route.params.id)
 const currentProduct = products.find(product => product.id === productId)
 const currentImage = ref(0)
@@ -31,12 +33,19 @@ const currentImage = ref(0)
           <v-card-text class="desc-text">{{currentProduct?.longDescription}}</v-card-text>
         </v-card>
 
-        <v-btn class="mt-10 bg-[#213D42] text-[#b89e14]" prepend-icon="mdi-email">
+        <v-btn class="mt-10 bg-[#213D42] text-[#b89e14]" prepend-icon="mdi-email" @click="isDialogOpen = true">
           Contact us to know more about this product
         </v-btn>
       </v-col>
     </v-row>
   </div>
+
+  <ContactDialog
+      :contact-dialog-is-open="isDialogOpen"
+      @update:contact-dialog-is-open="isDialogOpen = $event"
+      :product-name="currentProduct?.title"
+      :product-price="currentProduct?.price"
+  />
 </template>
 
 <style scoped>
