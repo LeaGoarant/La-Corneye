@@ -74,25 +74,5 @@
         "isDefault": false
       }
     ]
-  },
-  {
-    "id": 5,
-    "title": "Industrial Articulated Lamp",
-    "description": "1950s industrial desk lamp, fully articulated and functional.",
-    "price": 65.00,
-    "images": [
-      {
-        "path": "/images/industrial-lamp-1.jpg",
-        "isDefault": true
-      },
-      {
-        "path": "/images/industrial-lamp-2.jpg",
-        "isDefault": false
-      },
-      {
-        "path": "/images/industrial-lamp-3.jpg",
-        "isDefault": false
-      }
-    ]
   }
 ]
