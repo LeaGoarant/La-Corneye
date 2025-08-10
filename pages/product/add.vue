@@ -7,14 +7,20 @@ const newProduct = ref<Products>({
   title: "",
   description: "",
   longDescription: "",
-  price: 0,
+  price: null,
   images: []
 })
 const imageInput = ref<HTMLInputElement | null>(null)
 const selectedFiles = ref<File[]>([]);
+const isSuccess = ref(false)
+const isError = ref(false)
+const isLoading = ref(false)
+
+const router = useRouter()
 
 const disableSaveButton = computed(() => {
   return (
+      isLoading.value ||
       !newProduct.value.title.trim() ||
       !newProduct.value.longDescription.trim() ||
       !newProduct.value.price
@@ -47,6 +53,8 @@ const selectImages = (event: Event) => {
 }
 
 const handleSaveNewProduct = async () => {
+  isLoading.value = true
+
   const imagesBase64 = await Promise.all(
       selectedFiles.value.map(async (file) => ({
         filename: file.name,
@@ -63,12 +71,22 @@ const handleSaveNewProduct = async () => {
   }
 
 
-  await fetch('/api/products', {
+  fetch('/api/products', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(productPayload)
+  }).then(() => {
+    isSuccess.value = true
+    setTimeout(() => {
+      router.push('/')
+    }, 3000)
+  }).catch(error => {
+    isError.value = true
+    console.warn(error)
+  }).finally(() => {
+    isLoading.value = false
   })
 }
 
@@ -129,6 +147,7 @@ const handleSaveNewProduct = async () => {
         <v-col cols="12" md="6">
           <div>
             <v-text-field
+                type="number"
                 hide-details="auto"
                 variant="outlined"
                 label="Product price"
@@ -155,12 +174,23 @@ const handleSaveNewProduct = async () => {
         </v-col>
       </v-row>
     </form>
-    <v-btn @click="handleSaveNewProduct"
-           class="mt-10 bg-[#213D42] text-[#b89e14] flex justify-end"
-           :disabled="disableSaveButton"
-    >
-      Save
-    </v-btn>
+    <div class="flex justify-end">
+      <v-btn @click="handleSaveNewProduct"
+             class="mt-10 bg-[#213D42] text-[#b89e14]"
+             :disabled="disableSaveButton"
+      >
+        Save
+      </v-btn>
+    </div>
+
+    <div class="mt-4">
+      <v-alert class="w-1/2" color="success" icon="$success" v-if="isSuccess">
+        The product has been saved, you'll be redirected.
+      </v-alert>
+      <v-alert color="error" icon="$error" v-else-if="isError">
+        An error occurred, try again later.
+      </v-alert>
+    </div>
   </div>
 </template>
 
@@ -174,7 +204,7 @@ const handleSaveNewProduct = async () => {
   background: #B7C0C2;
   cursor: pointer;
 }
-.v-input {
+v-input {
   background-color: #B7C0C2;
   color: #364F53;
   border-radius:  12px;
