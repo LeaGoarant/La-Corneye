@@ -204,7 +204,7 @@ const handleSaveNewProduct = async () => {
   background: #B7C0C2;
   cursor: pointer;
 }
-v-input {
+.v-input {
   background-color: #B7C0C2;
   color: #364F53;
   border-radius:  12px;
