@@ -1,0 +1,82 @@
+﻿[
+  {
+    "id": 1,
+    "title": "Vintage Wooden Chair",
+    "description": "Solid wood chair from the 1960s, with a woven straw seat. Excellent condition.",
+    "longDescription": "This charming vintage wooden chair dates back to the 1960s and features a sturdy solid wood frame paired with a beautifully woven straw seat. Its timeless design combines both comfort and durability, making it a perfect piece for anyone looking to add a touch of mid-century elegance to their home. The chair has been meticulously preserved, showing minimal signs of wear, which only adds to its authentic character. Ideal for use in dining rooms, living spaces, or as an accent piece, this chair seamlessly blends functionality with vintage aesthetic appeal.",
+    "price": 45.00,
+    "images": [
+      {
+        "path": "/images/vintage-wooden-chair-1.jpg",
+        "isDefault": true
+      },
+      {
+        "path": "/images/vintage-wooden-chair-2.jpg",
+        "isDefault": false
+      },
+      {
+        "path": "/images/vintage-wooden-chair-3.jpg",
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Bakélite Rotary Phone",
+    "description": "Old black Bakélite phone, PTT model. Collector's item, not functional.",
+    "longDescription": "An iconic piece of telecommunications history, this vintage Bakélite rotary phone from the PTT era is a true collector’s treasure. Crafted from durable black Bakélite, the phone exhibits classic rotary dial mechanics and a sturdy handset, evoking nostalgia for a time before digital communication. Although no longer functional, it makes an excellent decorative item for vintage enthusiasts, adding a retro charm to any room or office. Perfect for display, photo shoots, or as a conversation starter for collectors and admirers of antique technology.",
+    "price": 70.00,
+    "images": [
+      {
+        "path": "/images/bakelite-phone-1.jpg",
+        "isDefault": true
+      },
+      {
+        "path": "/images/bakelite-phone-2.jpg",
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Louis XVI Style Gilded Mirror",
+    "description": "Antique mirror with ornate gilded frame, ideal for classic decoration.",
+    "longDescription": "This exquisite Louis XVI style mirror features a lavishly ornate gilded frame, meticulously crafted to reflect the elegance and grandeur of 18th-century French design. The mirror's detailed carvings and rich gold finish bring a touch of sophistication to any interior, making it a perfect centerpiece for classic or vintage-inspired decor. Whether displayed in a hallway, living room, or bedroom, this antique mirror enhances the ambiance with its timeless beauty and historical charm. A true statement piece for collectors and lovers of refined craftsmanship.",
+    "price": 120.00,
+    "images": [
+      {
+        "path": "/images/louis-xvi-mirror-1.jpg",
+        "isDefault": true
+      },
+      {
+        "path": "/images/louis-xvi-mirror-2.jpg",
+        "isDefault": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Underwood Typewriter",
+    "description": "Mechanical Underwood typewriter in very good condition, ribbon needs replacement.",
+    "longDescription": "A classic mechanical Underwood typewriter that remains in very good condition, this vintage device showcases the durable craftsmanship and reliable mechanics that made Underwood a household name in the early 20th century. While the ribbon needs replacement to function properly, the typewriter’s keys, carriage, and overall frame have been well maintained. This piece is perfect for collectors, writers who appreciate the tactile experience of vintage typing, or anyone looking to add a functional and decorative antique to their workspace. Its nostalgic appeal and robust design make it a timeless treasure.",
+    "price": 150.00,
+    "images": [
+      {
+        "path": "/images/underwood-typewriter-1.jpg",
+        "isDefault": true
+      },
+      {
+        "path": "/images/underwood-typewriter-2.jpg",
+        "isDefault": false
+      },
+      {
+        "path": "/images/underwood-typewriter-3.jpg",
+        "isDefault": false
+      },
+      {
+        "path": "/images/underwood-typewriter-4.jpg",
+        "isDefault": false
+      }
+    ]
+  }
+]
