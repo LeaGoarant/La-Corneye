@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
-import products from "~~/assets/data/products.json";
+import products from "~/data/products.json";
 
 const route = useRoute()
 const isDialogOpen = ref(false)

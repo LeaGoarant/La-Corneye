@@ -8,10 +8,15 @@ const keyIcon = computed(() => connectedUser.value ? 'mdi-key-outline' : 'mdi-ke
 
 const handleKeyIconClick = () => {
   if(connectedUser.value) {
-    router.push('/')
     logout()
+    router.push('/')
+    return
   }
   router.push('/login')
+}
+
+const handleAddNexProductClick = () => {
+  router.push('/product/add')
 }
 
 </script>
@@ -24,6 +29,14 @@ const handleKeyIconClick = () => {
         <h1 class="text-xl font-bold text-[#B7C0C2] mt-3 ml-3">La Corn'Eye</h1>
       </div>
     </NuxtLink>
-    <v-icon @click="handleKeyIconClick" class="rotate-[90deg] self-center mr-5" color="#b89e14" :icon="keyIcon" size="large" />
+    <div>
+      <v-btn v-if="connectedUser !== null"
+             @click="handleAddNexProductClick"
+             prepend-icon="mdi-plus-circle-outline" elevation="3" variant="text" class="text-[#b89e14] mr-10"
+      >
+        Add a new product
+      </v-btn>
+      <v-icon @click="handleKeyIconClick" class="rotate-[90deg] self-center mr-5" color="#b89e14" :icon="keyIcon" size="large" />
+    </div>
   </header>
 </template>

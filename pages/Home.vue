@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import products from "~~/assets/data/products.json";
+import products from "~/data/products.json";
 import ProductCard from "../components/ProductCard.vue";
 </script>
 
